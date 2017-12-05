@@ -36,9 +36,8 @@
     <div class="col-md-4">
       <div class="text-center">
         <button class="btn btn-primary" id="what-we-do-btn">What We Do!</button>
+        <br>
       </div>
-
-      <br>
       
       <div class="card home-page-list-header" id="ul-list">
         <h4>
@@ -62,6 +61,21 @@
           </ul>
         </h4>
       </div>
+
+      <div class="text-center">
+        <%= link_to "About Us!", about_path, class: 'btn btn-primary', id: "what-we-do-btn" %>
+      </div>
+
+      <div class="text-center">
+        <%= link_to "Contact Us!", contact_path, class: 'btn btn-primary buttons' %>
+      </div>
+
+      <div class="text-center">
+        <%= link_to "See our Gallery!", gallery_path, class: 'btn btn-primary buttons' %>
+      </div>
+
+
+      
     </div>
 
     <div class="col-md-4 text-center">
