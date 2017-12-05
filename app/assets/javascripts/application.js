@@ -13,7 +13,9 @@
 //= require rails-ujs
 //= require jquery
 //= require turbolinks
+//= require popper
 //= require_tree .
 //= require bootstrap-sprockets
+//= require page
 
 

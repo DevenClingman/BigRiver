@@ -1,35 +1,75 @@
 <%= render 'shared/header' %>
 
-<h2>Serving the Wasatch Front</h2>
-<h2>Office: 801-738-7907</h2>
-<h2>Mobile: 385-227-7337</h2>
-<h2><i>Licensed &amp; Insured General Contractor</i></h2>
-<h2>The Renovation Experts</h2>
+<div class="container">
+  <div class="card home-page-list-header">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Serving the Wasatch Front</h3>
+      </div>
+      <div class="col-md-4">
+        <h3>Office: 801-738-7907</h3>
+      </div>
+      <div class="col-md-4">
+        <h3>Mobile: 385-227-7337</h3>
+      </div>  
+    </div>
 
-<h3>
-  <ul>
-    <li>Additions</li>
-    <li>Renovations</li>
-    <li>Siding</li>
-    <li>Window Replacements</li>
-    <li>Energy Efficiency Upgrades</li>
-    <li>Custom Carpentry</li>
-    <li>Basement Finishes</li>
-    <li>Roof Conversions</li>
-    <li>Decks</li>
-    <li>Kitchens &amp; Baths</li>
-    <li>Footings &amp; Foundations</li>
-    <li>Design Build</li>
-    <li>Small Commercial</li>
-    <li>Garages &amp; Outbuildings</li>
-    <li>Skylights</li>
-    <li>Beams &amp; Columns</li>
-  </ul>
-</h3>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3><i>Licensed &amp; Insured General Contractor</i></h3>
+      </div>
+    </div>
 
-<%= image_tag "photo_1.jpeg" %>
-<%= image_tag "photo_2.jpeg" %>
-<%= image_tag "photo_3.jpeg" %>
-<%= image_tag "photo_4.jpeg" %>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3>The Renovation Experts</h3>
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <%= image_tag "https://s3-us-west-1.amazonaws.com/clingman-big-river-bucket/home+page/house_mid_construction.jpeg", class: "home-page-image" %>
+      <%= image_tag "https://s3-us-west-1.amazonaws.com/clingman-big-river-bucket/home+page/back_patio.jpeg", class: "home-page-image" %>
+    </div>
+    <div class="col-md-4">
+      <div class="text-center">
+        <button class="btn btn-primary" id="what-we-do-btn">What We Do!</button>
+      </div>
+
+      <br>
+      
+      <div class="card home-page-list-header" id="ul-list">
+        <h4>
+          <ul>
+            <li>Additions</li>
+            <li>Renovations</li>
+            <li>Siding</li>
+            <li>Window Replacements</li>
+            <li>Energy Efficiency Upgrades</li>
+            <li>Custom Carpentry</li>
+            <li>Basement Finishes</li>
+            <li>Roof Conversions</li>
+            <li>Decks</li>
+            <li>Kitchens &amp; Baths</li>
+            <li>Footings &amp; Foundations</li>
+            <li>Design Build</li>
+            <li>Small Commercial</li>
+            <li>Garages &amp; Outbuildings</li>
+            <li>Skylights</li>
+            <li>Beams &amp; Columns</li>
+          </ul>
+        </h4>
+      </div>
+    </div>
+
+    <div class="col-md-4 text-center">
+      <%= image_tag "https://s3-us-west-1.amazonaws.com/clingman-big-river-bucket/home+page/indoor_pool.jpeg", class: "home-page-image" %>
+      <%= image_tag "https://s3-us-west-1.amazonaws.com/clingman-big-river-bucket/home+page/basement_extension.jpeg", class: "home-page-image"%>
+    </div>
+  </div>
+</div>
+
 
 
