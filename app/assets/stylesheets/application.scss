@@ -2,16 +2,23 @@
 
 .home-page-image {
   margin-top: 15px;
-  height: 250px;
-  width: 250px;
+  
+  width: 100%;
   padding: 10px;
   display: inline-block;
-  border-radius: 7px;
+  border-radius: 7%;
+
 }
 
 .home-page-image:hover {
   border-width: 5px;
   border-color: blue;
+}
+
+.home-page-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-page-list-header {
@@ -28,10 +35,31 @@
 }
 
 #ul-list {
-  margin-top: 15px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: left;
 }
 
 .buttons {
   margin-top: 15px;
 }
+
+#home-row-one {
+  background: #60a2d1;
+  padding: 15px;
+  border-style: solid;
+  border-color: black;
+}
+
+hr{
+  border-style: solid;
+  border-color: black;
+}
+
+/*#home-row-two {
+  background: #bacddb;
+  padding: 15px;
+  border-style: solid;
+  border-color: black;
+}*/
 
