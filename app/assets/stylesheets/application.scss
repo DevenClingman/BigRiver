@@ -1,8 +1,12 @@
 @import "bootstrap";
 
+body{
+  padding: 15px;
+  background: #d1f8ff;
+}
+
 .home-page-image {
   margin-top: 15px;
-  
   width: 100%;
   padding: 10px;
   display: inline-block;
@@ -56,10 +60,17 @@ hr{
   border-color: black;
 }
 
-/*#home-row-two {
-  background: #bacddb;
-  padding: 15px;
+#banner-image {
   border-style: solid;
   border-color: black;
-}*/
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+}
+
+.about-page-text {
+  padding: 15px;
+}
+
 

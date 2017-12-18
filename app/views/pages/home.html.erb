@@ -1,6 +1,11 @@
 <%= render 'shared/header' %>
 
-<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <%= image_tag "http://www.bigriv-remodel.com/files/theme/banner-tall.jpg?1454884914", id: "banner-image" %>
+    </div>
+  </div>
+
   <div id="home-row-one">
     <div class="row">
       <div class="col-md-6 text-center">
@@ -9,30 +14,23 @@
 
       <div class="col-md-6 text-center home-page-text">
         <div>
-          <h3>Serving the Wasatch Front</h3>
-          <h3><i>Licensed &amp; Insured General Contractor</i></h3>
+          <h1>Serving the Wasatch Front</h1>
+          <h1><i>Licensed &amp; Insured General Contractor</i></h1>
         </div> 
       </div>    
     </div>
-  
   <hr>
   <div id="home-row-two">
     <div class="row">
-      <div class="col-md-6 text-center home-page-text">
-        <div>
-          <h3>Contact Us</h3>
-          <h4>Office: 801-738-7907</h3>
-          <h4>Mobile: 385-227-7337</h3>
-          <h4>
-            <a href="mailto:bigriverconstruction@hotmail.com?subject=EnterSubject">
-              <button class="btn-lg btn-success">
-                Email Us
-              </button>
-            </a>
-          </h4>
-        </div>
+      <div class="col-md-6" id="ul-list">
+        <h2>
+          <ul>
+            <% @jobs.each do |job|%>
+              <li> <%= job.name %> </li>
+            <% end %>
+          </ul>
+        </h2>
       </div>
-
       <div class="col-md-6">
         <%= image_tag "https://s3-us-west-1.amazonaws.com/clingman-big-river-bucket/home+page/back_patio.jpeg", class: "home-page-image" %>
       </div>
@@ -42,14 +40,20 @@
   <div class="row">
     <div class="col-md-6">
       <%= image_tag "https://s3-us-west-1.amazonaws.com/clingman-big-river-bucket/home+page/basement_extension.jpeg", class: "home-page-image" %>
-    </div>
-    <div class="col-md-6" id="ul-list">
-      <ul>
-        <% @jobs.each do |job|%>
-          <li> <%= job.name %> </li>
-        <% end %>
-      </ul>
+  </div>
+
+  <div class="col-md-6 text-center home-page-text">
+    <div>
+      <h1>Contact Us</h1>
+      <h4>Office: 801-738-7907</h3>
+      <h4>Mobile: 385-227-7337</h3>
+      <h4>
+        <a href="mailto:bigriverconstruction@hotmail.com?subject=EnterSubject">
+          <button class="btn-lg btn-success">
+            Email Us
+          </button>
+        </a>
+      </h4>
     </div>
   </div>
-</div>
 </div>
