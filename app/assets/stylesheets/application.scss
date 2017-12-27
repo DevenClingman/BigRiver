@@ -1,3 +1,4 @@
+@import "bootstrap-sprockets";
 @import "bootstrap";
 
 body{
@@ -23,6 +24,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 490px;
 }
 
 .home-page-list-header {
