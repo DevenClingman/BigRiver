@@ -2,33 +2,14 @@
   <div class="row">
     <div class="col-md-12">
       <ul class="nav nav-tabs">
-        <li>
+        <li class="<%= active?(root_path)%>">
           <%= link_to "Home", root_path %>
         </li>
-        <li>
+        <li class="<%= active?(about_path)%>">
           <%= link_to "About Us", about_path %>
         </li>
-        <li>
+        <li class="<%= active?(gallery_path)%>">
           <%= link_to "Gallery", gallery_path %>
-        </li>
-        <li class="dropdown pull-right">
-           <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown<strong class="caret"></strong></a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="#">Action</a>
-            </li>
-            <li>
-              <a href="#">Another action</a>
-            </li>
-            <li>
-              <a href="#">Something else here</a>
-            </li>
-            <li class="divider">
-            </li>
-            <li>
-              <a href="#">Separated link</a>
-            </li>
-          </ul>
         </li>
       </ul>
     </div>

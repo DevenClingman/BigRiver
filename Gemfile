@@ -52,3 +52,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+gem 'clingman_view_tool', '~> 0.1.0'
